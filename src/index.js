@@ -2,6 +2,15 @@ const ethers = require('ethers')
 const SoundMoneyCoin = require('./SoundMoneyCoin.json')
 
 function run (pk, rpc, gasPrice, frequency) {
+  console.log({frequency})
+  if(isNaN(frequency) || frequency < 1) {
+    console.log('Frequency must be greater than 1');
+    process.exit(-1)
+  }
+  if(isNaN(gasPrice) || gasPrice < 1) {
+    console.log('Gas price must be greater than 0');
+    process.exit(-1)
+  }
   const provider = getProvider(rpc)
   console.log('Connected to ethereum network!')
   const wallet = getWallet(pk, provider)
