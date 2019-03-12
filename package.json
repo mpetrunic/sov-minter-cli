@@ -1,0 +1,15 @@
+{
+  "name": "sov-minter-cli",
+  "version": "1.0.0",
+  "main": "src/index.js",
+  "description": "Simple cli tool to mint SOV coins periodically",
+  "repository": "https://github.com/mpetrunic/sov-minter-cli",
+  "author": "Marin Petrunić <marin@nodefactory.io>",
+  "license": "MIT",
+  "bin": {
+    "sov-minter": "./bin/cli.js"
+  },
+  "dependencies": {
+    "ethers": "^4.0.27"
+  }
+}
