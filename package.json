@@ -1,5 +1,5 @@
 {
-  "name": "sov-minter-cli",
+  "name": "@mpetrunic/sov-minter-cli",
   "version": "1.0.0",
   "main": "src/index.js",
   "description": "Simple cli tool to mint SOV coins periodically",
